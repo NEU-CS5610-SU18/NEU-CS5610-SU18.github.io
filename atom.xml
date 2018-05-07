@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>Tony Mullen</title>
-	<link href="http://mathcs.pugetsound.edu/~tmullen/atom.xml" rel="self"/>
-	<link href="http://mathcs.pugetsound.edu/~tmullen"/>
-	<updated>2018-05-07T06:35:10.426Z</updated>
-	<id>http://mathcs.pugetsound.edu/~tmullen</id>
+	<link href="https://neu-cs5610-su18.github.io/atom.xml" rel="self"/>
+	<link href="https://neu-cs5610-su18.github.io"/>
+	<updated>2018-05-07T07:07:56.597Z</updated>
+	<id>https://neu-cs5610-su18.github.io</id>
 	<author>
 		<name>Tony Mullen</name>
-		<email>tmullen@pugetsound.edu</email>
+		<email>tmullen@ccs.neu.edu</email>
 	</author>
 
 	
 		<entry>
 			<title>Generating a website with DocPad</title>
-			<link href="http://mathcs.pugetsound.edu/~tmullen//posts/bye"/>
+			<link href="https://neu-cs5610-su18.github.io//posts/bye"/>
 			<updated>2018-05-05T07:16:43.000Z</updated>
-			<id>http://mathcs.pugetsound.edu/~tmullen//posts/bye</id>
+			<id>https://neu-cs5610-su18.github.io//posts/bye</id>
 			<content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -29,7 +29,7 @@
 
 	&lt;!-- Our site title and description --&gt;
 	&lt;title&gt;Generating a website with DocPad | Tony Mullen&lt;/title&gt;
-	&lt;meta name=&quot;description&quot; content=&quot;Visiting Assistant Professor of Computer Science, University of Puget Sound.&quot; /&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Associate Teaching Professor of Computer Science, Northeastern University.&quot; /&gt;
 	&lt;meta name=&quot;keywords&quot; content=&quot;computer, science, university, puget, sound, natural, language, processing, graphics, Blender, programming, software, engineering&quot; /&gt;
 	&lt;meta name=&quot;author&quot; content=&quot;Tony Mullen&quot; /&gt;
 
@@ -40,7 +40,7 @@
 	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
 
 	&lt;!-- Icons --&gt;
-		&lt;link rel=&quot;shortcut icon&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullenimages/icons/favicon.ico&quot;&gt;
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;https://neu-cs5610-su18.github.ioimages/icons/favicon.ico&quot;&gt;
 		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
 		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
 		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
@@ -52,7 +52,7 @@
 	&lt;![endif]--&gt;
 
 	&lt;!-- Styles --&gt;
-	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/styles/twitter-bootstrap.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/jquery.bootstrap-touchspin.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/angular-flippy/flippy.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/angular-flippy/flippy-fancy.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/styles/bs-style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/styles/style.css&quot; /&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/styles/twitter-bootstrap.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy-fancy.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/styles/bs-style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/styles/style.css&quot; /&gt;
 &lt;/head&gt;
 &lt;body&gt;
 	&lt;!-- Menu --&gt;
@@ -70,7 +70,7 @@
 				&lt;ul class=&quot;nav navbar-nav&quot;&gt;
 
 					&lt;li&gt;
-						&lt;a href=&quot;http://mathcs.pugetsound.edu/~tmullen&quot;&gt;
+						&lt;a href=&quot;https://neu-cs5610-su18.github.io&quot;&gt;
 							Home
 						&lt;/a&gt;
 					&lt;/li&gt;
@@ -127,13 +127,13 @@
 		
 			&lt;p class=&quot;pull-left&quot;&gt;Tony Mullen tmullen@pugetsound.edu&lt;/p&gt;
 			&lt;p class=&quot;pull-right&quot;&gt;
-				This website was last updated at 2018-05-07T06:35:10.426Z
+				This website was last updated at 2018-05-07T07:07:56.597Z
 			&lt;/p&gt;
 		&lt;/footer&gt;
 	&lt;/div&gt;&lt;!-- /container --&gt;
 
 	&lt;!-- Scripts --&gt;
-	&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/ui-bootstrap-tpls-0.12.1.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/jquery.bootstrap-touchspin.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/angular-flippy/flippy.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/display-latex2.user.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/script.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/controllers.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/directives.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/domtweaks.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/solutions.js&quot;&gt;&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/vendor/ui-bootstrap-tpls-0.12.1.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/vendor/display-latex2.user.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/script.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/controllers.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/directives.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/domtweaks.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/solutions.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
@@ -141,9 +141,9 @@
 	
 		<entry>
 			<title>This is a Hello Blog Post</title>
-			<link href="http://mathcs.pugetsound.edu/~tmullen//posts/hello"/>
+			<link href="https://neu-cs5610-su18.github.io//posts/hello"/>
 			<updated>2018-05-05T07:16:43.000Z</updated>
-			<id>http://mathcs.pugetsound.edu/~tmullen//posts/hello</id>
+			<id>https://neu-cs5610-su18.github.io//posts/hello</id>
 			<content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -157,7 +157,7 @@
 
 	&lt;!-- Our site title and description --&gt;
 	&lt;title&gt;This is a Hello Blog Post | Tony Mullen&lt;/title&gt;
-	&lt;meta name=&quot;description&quot; content=&quot;Visiting Assistant Professor of Computer Science, University of Puget Sound.&quot; /&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Associate Teaching Professor of Computer Science, Northeastern University.&quot; /&gt;
 	&lt;meta name=&quot;keywords&quot; content=&quot;computer, science, university, puget, sound, natural, language, processing, graphics, Blender, programming, software, engineering&quot; /&gt;
 	&lt;meta name=&quot;author&quot; content=&quot;Tony Mullen&quot; /&gt;
 
@@ -168,7 +168,7 @@
 	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
 
 	&lt;!-- Icons --&gt;
-		&lt;link rel=&quot;shortcut icon&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullenimages/icons/favicon.ico&quot;&gt;
+		&lt;link rel=&quot;shortcut icon&quot; href=&quot;https://neu-cs5610-su18.github.ioimages/icons/favicon.ico&quot;&gt;
 		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
 		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
 		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
@@ -180,7 +180,7 @@
 	&lt;![endif]--&gt;
 
 	&lt;!-- Styles --&gt;
-	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/styles/twitter-bootstrap.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/jquery.bootstrap-touchspin.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/angular-flippy/flippy.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/angular-flippy/flippy-fancy.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/styles/bs-style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://mathcs.pugetsound.edu/~tmullen/styles/style.css&quot; /&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/styles/twitter-bootstrap.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy-fancy.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/styles/bs-style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;https://neu-cs5610-su18.github.io/styles/style.css&quot; /&gt;
 &lt;/head&gt;
 &lt;body&gt;
 	&lt;!-- Menu --&gt;
@@ -198,7 +198,7 @@
 				&lt;ul class=&quot;nav navbar-nav&quot;&gt;
 
 					&lt;li&gt;
-						&lt;a href=&quot;http://mathcs.pugetsound.edu/~tmullen&quot;&gt;
+						&lt;a href=&quot;https://neu-cs5610-su18.github.io&quot;&gt;
 							Home
 						&lt;/a&gt;
 					&lt;/li&gt;
@@ -254,13 +254,13 @@
 		
 			&lt;p class=&quot;pull-left&quot;&gt;Tony Mullen tmullen@pugetsound.edu&lt;/p&gt;
 			&lt;p class=&quot;pull-right&quot;&gt;
-				This website was last updated at 2018-05-07T06:35:10.426Z
+				This website was last updated at 2018-05-07T07:07:56.597Z
 			&lt;/p&gt;
 		&lt;/footer&gt;
 	&lt;/div&gt;&lt;!-- /container --&gt;
 
 	&lt;!-- Scripts --&gt;
-	&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/ui-bootstrap-tpls-0.12.1.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/jquery.bootstrap-touchspin.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/angular-flippy/flippy.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/vendor/display-latex2.user.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/script.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/controllers.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/directives.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/domtweaks.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://mathcs.pugetsound.edu/~tmullen/scripts/solutions.js&quot;&gt;&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/vendor/ui-bootstrap-tpls-0.12.1.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/vendor/display-latex2.user.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/script.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/app.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/controllers.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/directives.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/domtweaks.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;https://neu-cs5610-su18.github.io/scripts/solutions.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
