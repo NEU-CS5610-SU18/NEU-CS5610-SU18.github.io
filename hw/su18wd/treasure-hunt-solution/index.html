@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>MEAN treasure hunt solutions | Tony Mullen</title>
+	<meta name="description" content="su18wd/hw/treasure-hunt-solution.html.md" />
+	<meta name="keywords" content="computer, science, university, puget, sound, natural, language, processing, graphics, Blender, programming, software, engineering" />
+	<meta name="author" content="Tony Mullen" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.78.4" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="https://neu-cs5610-su18.github.ioimages/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy-fancy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/bs-style.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/style.css" />
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+					<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+
+					<li>
+						<a href="https://neu-cs5610-su18.github.io">
+							Home
+						</a>
+					</li>
+					
+					<li>
+						<a target="_blank" href="https://northeastern.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2558508_1&cmp_tab_id=_464806_1&mode=view">
+							Blackboard
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/NEU-CS5610-SU18">
+							Github
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://piazza.com/class/jgr02hx6u8614x">
+							Piazza
+						</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="container">
+		<!-- Content -->
+		<section id="content" class="content">
+			<div class="row" class="text-center">
+<div class="col-md-4">
+<h3> Summer 2018 </h3>
+<a href="/~tmullen/">
+<h2>CS 240: Software Engineering</h2>
+</a>
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Instructor</h2>
+</div>
+<div class="panel-body">
+<p>
+Tony Mullen</br>
+410 Thompson Hall<br/>
+</p>
+<p>
+Phone: 253.879.3562<br/>
+Email: tmullen@pugetsound.edu<br/>
+</p>
+</div>
+</div>
+
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Submitting the assignment</h2>
+</div>
+<div class="panel-body">
+
+
+</div>
+</div>
+
+</div>
+<div class="col-md-8">
+
+<div class="row-fluid">
+
+<h3> MEAN treasure hunt solutions </h3>
+
+<div class="description">
+
+<h1 id="mean-js-treasure-hunt">Mean.js treasure hunt</h1>
+<p>Here are the solutions to the treasure hunt.</p>
+<h2 id="round-1">Round 1</h2>
+<ol>
+<li><p>List three files in the top level directory of this project that will not generally be displayed in your Finder or Windows Explorer window (assuming default settings for your operating system). What do these files do/contain? </p>
+<p> <strong>Answer:</strong>  Anything that begins with a <code>.</code> (often called a &quot;dot file&quot;) will be hidden by default in most OS GUIs. On your command line, they will be hidden by the <code>ls</code> command, but listed with the <code>ls -a</code> command. In the Mean.js codebase, a lot of these are configuration files (filenames that end with &quot;rc&quot;, such as <code>.bowerrc</code> often contain configuration settings). Files with &quot;ignore&quot; in their names generally tell some process to ignore certain files or directories, such as <code>.gitignore</code>, which is the subject of the next question. </p>
+</li>
+<li><p>List three directories in this project that will be ignored by Git. Explain why you think they should (or shouldn&#39;t) be ignored by Git. </p>
+<p> <strong>Answer:</strong> Anything files or directories listed in <code>.gitignore</code> will be disregarded by Git. Examples of directories include <code>node_modules</code>, <code>public/lib</code>, and <code>modules/*/client/scss/*.css</code> (which is a pattern that matches multiple directories, using the <code>*</code> wildcard). All of these are places which are automatically populated at installation or deployment, and would be a waste of time and space to push to repositories. <code>node_modules</code>, for example, contains all the 3rd party server-side dependencies of your application. All the software specified in <code>package.json</code> is downloaded and installed here when you run <code>npm install</code>. There&#39;s no reason to keep it in a repository, or to upload it to Heroku; we can simply tell Heroku to run <code>npm install</code> itself and get the dependencies from their origins. The same story with <code>public/lib</code> although these are client-side dependencies which are wrangled by <code>bower</code>. The last example is a little different. Part of our pre-processing at deployment involves converting <code>.scss</code> files into <code>.css</code> files. Sass (<code>.scss</code>) is a format that lets us write style sheets in a more convenient and concise way that straight css (which is read by the browser). The Sass pre-processor converts these to standard css. We don&#39;t need to store the output <code>.css</code> files in a repo or submit them to Heroku, we just need to be sure to generate them each time we deploy. </p>
+</li>
+<li><p>Find and list three <code>.md</code> files in the top level of the project. What are <code>.md</code> files generally used for? What do the <code>#</code>, <code>##</code>, and <code>###</code> sequence of characters indicate?</p>
+<p> <strong>Answer:</strong> Markdown (<code>.md</code>) is a way to write text intended to be read in a browser. It&#39;s a lot more concise and convenient than writing in html directly, although not quite as flexible. A pre-processing step is necessary to compile <code>.md</code> files into html. The <code>#</code> sign indicates header text. One <code>#</code> is a top level header (&quot;header 1&quot;), two is a smaller header for subtitles, three is a still smaller header, etc. </p>
+</li>
+<li><p>Find the <code>package.json</code> file for your project&#39;s installation of Express. Where is this file located? What is the &quot;description&quot; listed for Express</p>
+<p> <strong>Answer:</strong> The <code>package.json</code> for Express is located in <code>node_modules/Express</code>. The description is &quot;Fast, unopinionated, minimalist web framework&quot;.</p>
+</li>
+</ol>
+<h2 id="round-2">Round 2</h2>
+<ol>
+<li><p>When you run your Mean.js application with the <code>gulp</code> command, you&#39;ll see something like this appear in the command line:</p>
+<pre><code> --
+ MEAN.JS - Development Environment
+
+ Environment:     development
+ Server:          http://0.0.0.0:3000
+ Database:        mongodb://localhost/mean-dev
+ App version:     0.5.0
+ MEAN.JS version: 0.5.0
+ --
+</code></pre><p> The title of the application is in the first line. By default, the app&#39;s title is <code>MEAN.JS</code>. Where is this set? Find where this is located in the code and change the app title to something more suitable to your group.  </p>
+<p> <strong>Answer:</strong> The title for the application is set in <code>config/env/default.js</code> as the value of <code>title</code> in the <code>app</code> object exported in <code>module.exports</code>.</p>
+</li>
+<li><p>Study your project&#39;s <code>gulpfile.js</code>. Which tasks are part of the <code>default</code> task, but not part of the <code>prod</code> task? Which tasks are part of <code>prod</code>, but not part of <code>default</code>? Which of these tasks will ultimately result in minified JavaScript? What is the name of the task that does the minifying?</p>
+<p> <strong>Answer:</strong> Aside from setting the environment <code>env:dev</code> versus <code>env:prod</code> the <code>default</code> task includes <code>wiredep</code>, whereas the <code>prod</code> task includes <code>build</code> and runs the version of <code>nodemon</code> without debugging (<code>nodebug</code>). The <code>wiredep</code> task installs client side dependencies that are also available to the app in production mode, so doesn&#39;t need to be run both times. The <code>build</code> task does things like minifying and concatenating files which is not necessary for development. The task that handles JS minifying is called <code>uglify</code>.</p>
+</li>
+<li><p>The <code>bower install</code> command depends on the file <code>bower.json</code> and the file <code>.bowerrc</code>. Read these files. What do you think it uses the information in these files for? How is <code>bower install</code> different from <code>npm install</code>?</p>
+<p> <strong>Answer:</strong> The <code>bower.json</code> file tells Bower what client-side dependencies to install, and the <code>.bowerrc</code> file tells Bower where to put them. The difference between <code>bower install</code> and <code>npm install</code> is mainly that NPM handles server-side dependencies and Bower handles client-side dependencies. However, another difference is that <code>bower install</code> is called as part of <code>npm install</code> (as determined in the <code>scripts</code> portion of <code>package.json</code>) whereas the reverse isn&#39;t true. </p>
+</li>
+<li><p>In the development environment, your application uses a database on localhost called <code>mean-dev</code> which it creates automatically. Where is the name of this database set? What is the corresponding name of the database used in production mode, and where is that database name set?</p>
+<p> <strong>Answer:</strong> This is set in <code>config/env/development.js</code> in the <code>db</code> object. The production mode database is <code>mean</code> and is set in <code>config/env/production.js</code></p>
+</li>
+<li><p>Read the file <code>config/assets/default.js</code> closely. This is a list of assets which will be automatically added to your html. Portions of this list are generated automatically by <code>wiredep</code> based on the contents of your <code>bower.json</code>. Other portions depend on what files are placed in certain directories in your project. Based on what you see in this file, if you wanted to add a .css (style sheet) file for a particular module, where would be a good place to put that file?</p>
+<p> <strong>Answer:</strong> There are several ways this could be done, but the most relevant code is probably here:</p>
+<pre><code> css: [
+   &#39;modules/*/client/{css,less,scss}/*.css&#39;
+ ],
+</code></pre><p> This tells us that if we place any file with the suffix <code>.css</code> into a directory called <code>/client/css/</code> (among other possibilities) within our module&#39;s own subdirectory (for example, <code>modules/articles/client/css/</code>) it will be included in the html. </p>
+</li>
+</ol>
+<h1 id="round-3">Round 3</h1>
+<ol>
+<li><p>What needs to be changed to make it so that non-admin users can post a new article?</p>
+<p> <strong>Answer:</strong> 
+ The simplest way to do this is to keep the functionality associated with the <code>admin</code> URIs (states) and give the user access to those states. In <code>articles-admin.client.routes.js</code> you can give users permission to access states (URLs) by changing the <code>roles</code> values from <code>[&#39;admin&#39;]</code> to <code>[&#39;admin&#39;, &#39;user&#39;]</code>. This must at least be done for the <code>admin.articles.create</code> state, but it can also be done for the others so you don&#39;t get &#39;forbidden&#39; messages when your app sends you to the listings page after creating an article. </p>
+<p> To get to this page from a menu, you can add a menu item in <code>articles.client.menus.js</code> along these lines:</p>
+<pre><code> menuService.addSubMenuItem(&#39;topbar&#39;, &#39;articles&#39;, {
+   title: &#39;Add an article&#39;,
+   state: &#39;admin.articles.create&#39;,
+   roles: [&#39;*&#39;]
+ });
+</code></pre> <!--*-->
+<p> Finally, in order to ensure that the server allows the user to make the POST request, <code>articles.server.policy.js</code> must be adjusted. Change the <code>roles</code> value from <code>[&#39;admin&#39;]</code> to <code>[&#39;admin&#39;, &#39;user&#39;]</code> and delete the block currently dedicated to the <code>[&#39;user&#39;]</code> value. </p>
+<p> This isn&#39;t especially elegant; the URLs will still read <code>admin</code> and the functionality isn&#39;t well integrated into the user site, but it&#39;s a minimal way to get the required behavior. A more complete solution would require deeper reorganizing. </p>
+</li>
+<li><p>What needs to be changed to make it so that non-logged in users can use the chat functionality as guests? This isn&#39;t an entirely trivial thing to do, so I&#39;m going to give you some hints. The solution requires changing several files:</p>
+<p> <code>core/client/services/socket.io.client.service.js</code></p>
+<p> <code>chat/client/controllers/chat.client.controller.js</code> </p>
+<p> <code>chat/client/config/chat.client.routes.js</code></p>
+<p> <code>chat/client/config/chat.client.menus.js</code></p>
+<p> <code>config/lib/socket.io.js</code> </p>
+<p> <code>chat/server/sockets/chat.server.socket.config.js</code></p>
+<p> <strong>Answer:</strong> In the file <code>core/client/services/socket.io.client.service.js</code>  around line 26 there&#39;s an  <code>if (Authentication.user)</code>  conditional that needs to be removed. Once this is removed the Authentication injection can be removed from the service completely, but this isn&#39;t necessary.</p>
+<p> In the file   <code>chat/client/controllers/chat.client.controller.js</code>  the <code>if (!Authentication.user)</code> conditional around line 21 needs to be removed. </p>
+<p> In the file <code>chat/client/config/chat.client.routes.js</code>  the &#39;roles&#39; line in the data object (around line 17) should be deleted.</p>
+<p> In <code>chat/client/config/chat.client.menus.js</code> the <code>roles</code> value in <code>addMenuItem</code> should be <code>[&#39;*&#39;]</code> </p>
+<p> In the file  <code>config/lib/socket.io.js</code>  around line 98 there&#39;s an <code>if (socket.request.user) {</code> conditional. Comment out the conditional and the <code>} else {</code> block.</p>
+<p> Finally, in the file  <code>chat/server/sockets/chat.server.socket.config.js</code>  all instances of <code>profileImageURL</code> and <code>username</code> need to be made conditional on <code>socket.request.user</code> being defined. In <code>socket.on(&#39;chatMessage&#39;</code>, this should be done in the function argument. However, in <code>io.emit(&#39;chatMessage&#39;</code>, the second argument is an object, rather than a function, so it&#39;s necessary to tweak it a bit. I suggest making it into an iife (immediately invoked function expression) that returns the object but with the values given defaults as appropriate. </p>
+<p> Here&#39;s the code to do that for the <code>io.emit(&#39;chatMessage&#39;</code> event:</p>
+<pre><code> io.emit(&#39;chatMessage&#39;, (function(){
+   var _profileImageURL;
+   var _username;
+   if (socket.request.user) {
+     _profileImageURL = socket.request.user.profileImageURL;
+     _username = socket.request.user.username
+   } else {
+     _profileImageURL = &#39;modules/users/client/img/profile/default.png&#39;;
+     _username = &#39;Guest&#39;;
+   }
+   return  {
+       type: &#39;status&#39;,
+       text: &#39;Is now connected&#39;,
+       created: Date.now(),
+       profileImageURL: _profileImageURL,
+       username: _username
+     }
+   })()
+ );​
+</code></pre></li>
+</ol>
+
+
+</div>
+
+<hr>
+<div class="classcredits">
+
+
+
+</div>
+
+</div>
+</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+		
+			<p class="pull-left">Tony Mullen tmullen@pugetsound.edu</p>
+			<p class="pull-right">
+				This website was last updated at 2018-05-07T07:28:06.422Z
+			</p>
+		</footer>
+	</div><!-- /container -->
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script><script defer="defer"  src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/ui-bootstrap-tpls-0.12.1.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/display-latex2.user.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/script.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/app.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/controllers.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/directives.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/domtweaks.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/solutions.js"></script>
+</body>
+</html>

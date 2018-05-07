@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Homework 2: Mean Stack Setup | Tony Mullen</title>
+	<meta name="description" content="su18wd/hw/hw2-MeanSetup-description.html.md" />
+	<meta name="keywords" content="computer, science, university, puget, sound, natural, language, processing, graphics, Blender, programming, software, engineering" />
+	<meta name="author" content="Tony Mullen" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.78.4" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="https://neu-cs5610-su18.github.ioimages/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy-fancy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/bs-style.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/style.css" />
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+					<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+
+					<li>
+						<a href="https://neu-cs5610-su18.github.io">
+							Home
+						</a>
+					</li>
+					
+					<li>
+						<a target="_blank" href="https://northeastern.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2558508_1&cmp_tab_id=_464806_1&mode=view">
+							Blackboard
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/NEU-CS5610-SU18">
+							Github
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://piazza.com/class/jgr02hx6u8614x">
+							Piazza
+						</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="container">
+		<!-- Content -->
+		<section id="content" class="content">
+			<div class="row" class="text-center">
+<div class="col-md-4">
+<h3> Summer 2018 </h3>
+<a href="/~tmullen/">
+<h2>CS 240: Software Engineering</h2>
+</a>
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Instructor</h2>
+</div>
+<div class="panel-body">
+<p>
+Tony Mullen</br>
+410 Thompson Hall<br/>
+</p>
+<p>
+Phone: 253.879.3562<br/>
+Email: tmullen@pugetsound.edu<br/>
+</p>
+</div>
+</div>
+
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Submitting the assignment</h2>
+</div>
+<div class="panel-body">
+<p>To submit this assignment go to the submission page on Blackboard and enter the link to your GitHub Repository&#39;s top page (where the README is displayed). Review the notes on my <a href="https://github.com/NEU-CS5610-SU18/TonyMullen-Book">GitHub page</a> to be sure you&#39;re submitting everything that needs to be submitted. Make sure that the link is a proper link (i.e. clickable). Also, make sure that your GitHub README.md file contains a (clickable) link to the live application on Heroku.</p>
+
+
+</div>
+</div>
+
+</div>
+<div class="col-md-8">
+
+<div class="row-fluid">
+
+<h3> Homework 2: Mean Stack Setup </h3>
+
+<div class="description">
+
+<h2 id="overview">Overview</h2>
+<p>The practical component of this course deals with JavaScript web development using a collection of tools (sometimes called a &quot;stack&quot;) that work together on the server and client side to create a complete application. Specifically, we will use the Node.js server-side application platform, the Express server-side web-application framework, the MongoDB database, and the Angular.js client-side framework to tie the data model to a browser-based (or mobile) user interface. This collection tools is informally referred to as the &quot;MEAN stack&quot;.</p>
+<p>The book <em>Getting MEAN with Mongo, Express, Angular, and Node</em> covers the MEAN stack from end to end. For the first portion of this course, you will work through this book as it describes the construction of a full-fledged MEAN-stack web application.</p>
+<p>For this assignment, you will follow the steps in chapter 3 of the book, getting a MEAN application set up and deploying it on the Heroku application hosting platform. Once the necessary software (Node, NPM, and Express) are installed on your system, the instructions begin in section 3.2.2.</p>
+<p>My own GitHub repository for working through this book can be seen <a href="https://github.com/NEU-CS5610-SU18/TonyMullen-Book">here</a>. Study this repo closely and use it as a model for your own (see below for more on this). Notice that I have added to the Readme with each chapter release, placing comments and screenshots for each subsequent chapter <em>above</em> those of the previous chapter. Scroll to the <a href="https://github.com/NEU-CS5610-SU18/TonyMullen-Book#chapter-3">bottom</a> to read the earliest chapter notes. <strong>Pay attention to the chapter notes, as they often describe errors or conflicts in the text.</strong></p>
+<h2 id="screenshots-and-live-application">Screenshots and live application</h2>
+<p>Because these assignments are based on copying code from a book, the true challenge is to make sure you get your code working! For this reason, it is <em>essential</em> that each chapter update is accompanied by a link to the live application and a screenshot of your live application at the time of the chapter commit. Code commits without a live application and a screenshot will be worth no more than 60% of the assignment&#39;s value.</p>
+<h2 id="using-github">Using GitHub</h2>
+<p>In addition to deploying the application to Heroku, as described in the book, you must <em>also</em> commit the same code to your personal Github repository (this is done using the same git commands, but simply pushing to a different remote), which we will set up in class.</p>
+<p>In brief, for each commit, you need to do the following:</p>
+<pre><code>git add .
+git commit -m &quot;a meaningful note about the commit&quot;
+git push &lt;remote&gt; master
+</code></pre><p>Where &lt;remote&gt; is the name of the remote repository you&#39;re pushing to, i.e. either your Heroku repo or your Github repo. These names are arbitrary, but the default is to call one <code>origin</code>.</p>
+<p>To add the Github repo (after creating a new repo in Github) do:</p>
+<pre><code>git remote add origin https://github.com/NEU-CS5610-SU18/&lt;YourNameWithoutAngleBrackets&gt;-Book.git
+</code></pre><p>Where the angle-bracketed portion of the URL is substituted for the name of the repo you created (e.g: TonyMullen.git).</p>
+<p>After doing that, you can push to:</p>
+<pre><code>git push origin master
+</code></pre><p>(This will of course not update any code on the Heroku repo. That will need to be pushed separately.)</p>
+<p>You should also <em>tag</em> the commit (create a &#39;release&#39;) for each chapter. You will be continuing through the book using the same code, so this will make it possible to easily identify the state the code was at for each chapter). To do this, first commit your code, then do:</p>
+<pre><code>git tag -a ch3 -m &quot;project through chapter 3 of Getting MEAN&quot;
+</code></pre><p>Here the tag we&#39;re using is <span class="codefont">ch3</span> to indicate that this code goes through chapter 3. In subsequent chapter assignments, you&#39;ll be expected to tag the releases <span class="codefont">ch4</span>, <span class="codefont">ch5</span>, etc.</p>
+<p>In order for your tags to show up on Github, you will need to push the tags also, like so:</p>
+<pre><code>git push --tags origin master
+</code></pre><p>Include a README.md file describing what you did and detailing any issues you had. The README.md is the first place I will look to make sure you did this assignment, so make sure to include/update it! <strong>The README file should include a link to the live application on Heroku.</strong></p>
+<h2 id="making-regular-commits">Making regular commits</h2>
+<p><strong>You should commit frequently. You must make at least 4 commits per chapter, representing incremental progress.</strong> Please refer to my repository&#39;s commit history <a href="https://github.com/NEU-CS5610-SU18/TonyMullen-Book/commits/master">here</a> for reference. Committing frequently is good practice, and it is also creates a record of your incremental progress through the book as further evidence that you did not simply copy and paste the author&#39;s code.</p>
+<p>In general, you should commit whenever you complete a single piece of functionality. Make sure your code is working when you commit. Do not commit broken code. <strong>Check for problems frequently, and fix them before moving forward</strong>.  </p>
+<h2 id="references">References</h2>
+<p>(At the time of this writing, this isn&#39;t accurate for the 2nd edition of the book, as the author&#39;s code is not yet posted, but when it is...)</p>
+<p>The author&#39;s code is available on his GitHub site, and you are encouraged to <em>refer</em> to it if you get stuck working through the book. <strong>Do not copy/paste, fork, or otherwise use this code directly without typing it in yourself. Any evidence that this was done may result in forfeiture of credit for this assignment</strong>. Be aware that the author&#39;s code on GitHub is in a completed state, and that your own code as you work through the book will not be identical to the finished state of the author&#39;s code, so it is often possible to identify copy/pasting on this basis. The same is true of referring to the code in my own repository.</p>
+<h2 id="grade-weighting-lateness">Grade weighting &amp; lateness</h2>
+<p>This assignment has a weight of 1 within the individual assignments portion of your overall grade.</p>
+
+
+</div>
+
+<hr>
+<div class="classcredits">
+
+
+
+
+</div>
+
+</div>
+</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+		
+			<p class="pull-left">Tony Mullen tmullen@pugetsound.edu</p>
+			<p class="pull-right">
+				This website was last updated at 2018-05-07T07:28:06.422Z
+			</p>
+		</footer>
+	</div><!-- /container -->
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script><script defer="defer"  src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/ui-bootstrap-tpls-0.12.1.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/display-latex2.user.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/script.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/app.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/controllers.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/directives.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/domtweaks.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/solutions.js"></script>
+</body>
+</html>

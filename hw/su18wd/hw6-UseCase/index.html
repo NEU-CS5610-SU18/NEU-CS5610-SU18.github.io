@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Homework 6: Comparing the Requirements Process | Tony Mullen</title>
+	<meta name="description" content="su18wd/hw/hw6-UseCase-description.html.md" />
+	<meta name="keywords" content="computer, science, university, puget, sound, natural, language, processing, graphics, Blender, programming, software, engineering" />
+	<meta name="author" content="Tony Mullen" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.78.4" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="https://neu-cs5610-su18.github.ioimages/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy-fancy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/bs-style.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/style.css" />
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+					<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+
+					<li>
+						<a href="https://neu-cs5610-su18.github.io">
+							Home
+						</a>
+					</li>
+					
+					<li>
+						<a target="_blank" href="https://northeastern.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2558508_1&cmp_tab_id=_464806_1&mode=view">
+							Blackboard
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/NEU-CS5610-SU18">
+							Github
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://piazza.com/class/jgr02hx6u8614x">
+							Piazza
+						</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="container">
+		<!-- Content -->
+		<section id="content" class="content">
+			<div class="row" class="text-center">
+<div class="col-md-4">
+<h3> Summer 2018 </h3>
+<a href="/~tmullen/">
+<h2>CS 240: Software Engineering</h2>
+</a>
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Instructor</h2>
+</div>
+<div class="panel-body">
+<p>
+Tony Mullen</br>
+410 Thompson Hall<br/>
+</p>
+<p>
+Phone: 253.879.3562<br/>
+Email: tmullen@pugetsound.edu<br/>
+</p>
+</div>
+</div>
+
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Submitting the assignment</h2>
+</div>
+<div class="panel-body">
+<p>Submit your specification in <strong>pdf format</strong> on the <a href="https://moodle.pugetsound.edu/moodle/mod/assign/view.php?id=407265">assignment&#39;s Moodle page</a>. <strong>Do not submit .doc, .txt, or any other format files. Make sure your name is written on the document.</strong> Wrong file format submissions and submissions without names will each be penalized by 10%.</p>
+<p>I also encourage you to post it publicly on Piazza so that (a) you can share your specification with your team mates, and (b) so that you can share with others examples of how to write these specifications.</p>
+
+
+</div>
+</div>
+
+</div>
+<div class="col-md-8">
+
+<div class="row-fluid">
+
+<h3> Homework 6: Comparing the Requirements Process </h3>
+
+<div class="description">
+
+<h2 id="overview">Overview</h2>
+<p>In this assignment you will be writing a <em>Use Case Specification</em> for your system---a method of documenting requirements commonly used in &quot;Plan and Document&quot; process models. You will be formally documenting a use case and its scenarios for one (1) piece of functionality described by one of the user stories you developed as part of Project Iteration 0.2, as well as identifying a few non-functional requirements. You will then briefly compare this process for documenting requirements with the Agile approach used with the project.</p>
+<p>This means that you&#39;ll be writing requirements for this piece of functionality <em>twice</em>. This is deliberate. For one thing, this will help you make sure you have a really clear understanding of your project&#39;s functionality, but it will also give you a chance to compare activities from different approaches to software engineering. This is really the only &quot;Plan and Document&quot; style work you&#39;ll do in this class, but it&#39;s an important thing to touch on.</p>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li>Write a formal Use Case Specification</li>
+<li>Practice creating technical documentation</li>
+<li>Compare different activities for recording requirements</li>
+</ul>
+<h2 id="assignment-details">Assignment details</h2>
+<p>Pick one of the user stories you developed as part of Project Iteration 0.3. You may need to use a small number of related user stories to cover a complete Use Case with its different scenarios. You may choose overlapping functionality for your use case with other members of your team. The Use Case assignment is an individual assignment, so it&#39;s not necessary to coordinate closely with other members on this. </p>
+<p>Write a detailed Use Case Specification describing the functionality of your system that is represented by your chosen user stories. This use case will follow the modified version of <a href="http://alistair.cockburn.us/get/2465">Cockburn&#39;s template</a> for a <a href="https://en.wikipedia.org/wiki/Use_case#Fully_dressed">fully dressed</a> use case that is described below.</p>
+<p>Also, please review the lecture slides for this class, which include an example use case and an overview of Cockburn&#39;s template.</p>
+<ul>
+<li><strong>Name:</strong> A descriptive name for the use case. Names should be short and reflect the <em>goal</em> of the user. Use clear active verbs in present tense, such as &quot;Buy House&quot; in the Monopoly example.<ul>
+<li>The reader should understand the goal of the use case just from the title: for example, instead of &quot;Process Invoices&quot; you might use &quot;Collect Late Payments from Customers&quot;.</li>
+</ul>
+</li>
+<li><strong>Brief Description:</strong> A short (1-2 sentence) prose description of what the use case is about. This can come directly from your user stories.</li>
+<li><strong>Actors:</strong> List and name the actor(s) involved in the use case. Remember that an actor is a <em>role</em> for a person or machine that interacts (exchanges information) with the system. Give actors consistent names.</li>
+<li><strong>Preconditions:</strong> Any special conditions that need to have been met before the use case can occur. The existence of these conditions implies that another use case somewhere can cause them to be true.<ul>
+<li>These are conditions for the system&#39;s usage, as a way of situating this particular use case within the overall system usage; think about what kinds of activities or states must have occured before this use case. &quot;The user is authenticated&quot; is a common precondition. &quot;The user can connect to the internet&quot; probably doesn&#39;t tell us anything.</li>
+<li>It is quite possible for there not to be any preconditions on a use case!</li>
+</ul>
+</li>
+<li><strong>Flow of Events:</strong> This is the bulk of the use case write-up. This is a numbered list of events that occur in this use case (I recommend you write them as a list, rather than in prose).<ul>
+<li>Include both the <strong>Basic Flow</strong> and any <strong>Alternative Flows</strong>. The Basic Flow is your &quot;happy path&quot;, and Alternative Flows would be the &quot;sad paths&quot; (you can think of them as Exceptions). You are welcome to use <em>subflows</em> for readability.</li>
+<li>Write each event/step in natural language (not code)--the goal is readability!</li>
+<li>Describe what the actors <em>do</em> in each step, but not how they do it! Remember, in each step the actors are taking an action to complete their goal.<ul>
+<li>&quot;The Buyer selects a product&quot; is good. &quot;The Buy clicks on the product&#39;s name in the drop-down list on the left&quot; is less good. The idea is to list what the system needs to do, but not add in assumptions about how it needs to be built (or what it needs to look like).</li>
+</ul>
+</li>
+<li><strong>Alternative flows</strong> are written just like the <strong>Basic Flow</strong> (as a list of steps the Actors take), but start when something goes &quot;wrong.&quot; These steps should either take the system back into the Basic Flow of events, or to the end of the use case.</li>
+</ul>
+</li>
+<li><strong>Postconditions:</strong> Any details about the state of the system at the end of the use case. This is a good place to explicitly state the outcome of the user case. If the use case has caused some permanent change (that might be a precondition for a future use case), be sure to note it!<ul>
+<li>Again &quot;the user is authenticated&quot; is a common postcondition. &quot;The book has been purchased and the order sent to the warehouse&quot; is another good example.</li>
+</ul>
+</li>
+</ul>
+<p>Note that you are <strong>not</strong> required to include a UML Use Case diagram (though you of course can if you want!)</p>
+<h2 id="comparison">Comparison</h2>
+<p>In addition to your Use Case Specification, include a short (~2 paragraph) written discussion of your experiences writing User Stories and Use Case Specification. You should draw on your project&#39;s User Stories and Use Cases as examples! You might consider:</p>
+<ul>
+<li>Which is more useful for internal developers (i.e., team members?)</li>
+<li>Which is more useful for external developers (i.e., if you were bringing in a new team member halfway through)?</li>
+<li>Which is more useful for the customer?</li>
+<li>Which is a better representation of what the system will do (and what makes it better)?</li>
+<li>Overall, what are the advantages and disadvantages of using User Stories vs. Use Case Specifications?</li>
+</ul>
+<p>Other points of reflection are of course welcome! The goal is to evaluate the benefits and drawbacks of these different forms.</p>
+<h2 id="grade-weighting-lateness">Grade weighting &amp; lateness</h2>
+<p>This assignment has a weight of 1 within the individual assignments portion of your overall grade. This assignment will be accepted for partial credit up to 4 days late, with a penalty of 20% per day.</p>
+<h2 id="before-submitting">Before submitting</h2>
+<p>Please take some time to <strong>proofread</strong> and revise your specification--iterate your writing!. Think of this as a professional document, something that you would show to your boss!</p>
+<p><strong>It should go without saying</strong> that any document that you want credit for or to be in any way associated with, <strong>ever</strong>, should always have <strong>your name</strong> on it. Assume that your reader may want to print a copy up to read on the beach and that if your name is not to be found on the document itself it will cause gnashing of teeth.</p>
+<h2 id="grading">Grading</h2>
+<p>This assignment will be graded on the following criteria:</p>
+<ul>
+<li>All instructions for submission have been followed correctly</li>
+<li>You have included all parts of the Use Case Specification</li>
+<li>You have appropriately named your use case and its Actors</li>
+<li>Preconditions and Postconditions are descriptive and usefully informative</li>
+<li>The Basic Flow of events effectively describes the system usage</li>
+<li>You have included Alternative Flows as appropriate</li>
+<li>You have included a comparison between your User Stories and Use Case Specification</li>
+</ul>
+
+
+</div>
+
+<hr>
+<div class="classcredits">
+
+<p>This assignment is based on an assignment developed by Joel Ross</p>
+
+
+</div>
+
+</div>
+</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+		
+			<p class="pull-left">Tony Mullen tmullen@pugetsound.edu</p>
+			<p class="pull-right">
+				This website was last updated at 2018-05-07T07:28:06.422Z
+			</p>
+		</footer>
+	</div><!-- /container -->
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script><script defer="defer"  src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/ui-bootstrap-tpls-0.12.1.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/display-latex2.user.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/script.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/app.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/controllers.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/directives.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/domtweaks.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/solutions.js"></script>
+</body>
+</html>

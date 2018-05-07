@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Working with the calendar module | Tony Mullen</title>
+	<meta name="description" content="su18wd/hw/calendar-mod-description.html.md" />
+	<meta name="keywords" content="computer, science, university, puget, sound, natural, language, processing, graphics, Blender, programming, software, engineering" />
+	<meta name="author" content="Tony Mullen" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.78.4" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="https://neu-cs5610-su18.github.ioimages/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy-fancy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/bs-style.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/style.css" />
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+					<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+
+					<li>
+						<a href="https://neu-cs5610-su18.github.io">
+							Home
+						</a>
+					</li>
+					
+					<li>
+						<a target="_blank" href="https://northeastern.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2558508_1&cmp_tab_id=_464806_1&mode=view">
+							Blackboard
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/NEU-CS5610-SU18">
+							Github
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://piazza.com/class/jgr02hx6u8614x">
+							Piazza
+						</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="container">
+		<!-- Content -->
+		<section id="content" class="content">
+			<div class="row" class="text-center">
+<div class="col-md-4">
+<h3> Summer 2018 </h3>
+<a href="/~tmullen/">
+<h2>CS 240: Software Engineering</h2>
+</a>
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Instructor</h2>
+</div>
+<div class="panel-body">
+<p>
+Tony Mullen</br>
+410 Thompson Hall<br/>
+</p>
+<p>
+Phone: 253.879.3562<br/>
+Email: tmullen@pugetsound.edu<br/>
+</p>
+</div>
+</div>
+
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Submitting the assignment</h2>
+</div>
+<div class="panel-body">
+
+
+</div>
+</div>
+
+</div>
+<div class="col-md-8">
+
+<div class="row-fluid">
+
+<h3> Working with the calendar module </h3>
+
+<div class="description">
+
+<h1 id="modifying-the-calendar-module">Modifying the calendar module</h1>
+<p>This assignment is part of your group final project, and as such should be carried out by the entire group. The objective is to modify the Mean.js calendar module provided <a href="https://github.com/tonymullen/meanjs-calendar">here</a> in such a way that private calendar entries can be created by users who are logged in, which can then only be seen by that user. Currently, all events are public, can be created by unauthenticated users, and are seen by all. In the modified version, logged in users will see both the public events and their own private events. Here&#39;s the story:</p>
+<p><img src="/~tmullen/images/se/calendar_story.png" alt="Calendar story"></p>
+<p>Most of the existing tests for the calendar module will still apply. However, there are some new tests that need to be carried out. I have written two new server tests that need to be passed. In <code>cal-event.server.routes.tests.js</code> uncomment the two test cases starting at line 124 and remove the test case starting at line 110. When you&#39;ve done this, the first of the new tests that deals with saving public events should pass. The second test, which prevents a private test from being saved without the user being logged in, will not pass. We need to have a http response with a 403 error code and a message reading &quot;Must be logged in to save a private event&quot; in the case of trying to save a private event without a user object.  </p>
+<p>The following coding tasks must be carried out in order to get this working (details on each task follow):</p>
+<ul>
+<li>Modify view to display an &quot;Add private event&quot; button when user is logged in (authenticated)</li>
+<li>Modify client controller to add an event with public or private setting</li>
+<li>Modify model schema to add an attribute that indicates public or private</li>
+<li>Modify listing functionality in server controller to query DB appropriately</li>
+<li>Modify create functionality in server controller to ensure that a user object is saved with private events, or that a 403 error response is returned</li>
+<li>Modify CSS file to use <code>className</code> attribute to change display color of private events</li>
+</ul>
+<p>All of the above modifications should be made to files inside the <code>calendar</code> module (once the module has been correctly installed). Each modification can be made by editing a single file within the module (two of the changes require editing the same file, the server controller file).</p>
+<p><strong>All members of the group must code some part of the assignment in order to receive credit. Divide responsibility for coding tasks in a way to ensure this happens.</strong> Each member of the group should take responsibility for committing at least two of the bullet-pointed features above under their own GitHub identity. If there are more than 3 members in your group, add the following test cases to your group&#39;s todo list to ensure that each member has 2 items to work on.</p>
+<ul>
+<li>The server test case beginning on line 223 of the server routes test file</li>
+<li>The server test case beginning on line 227 of the server routes test file</li>
+<li>The server test case beginning on line 231 of the server routes test file</li>
+<li>The server test case beginning on line 235 of the server routes test file   </li>
+</ul>
+<p>Although individual contributions are important for this assignment, it is nevertheless a group assignment. You may work together as a group or as pairs on the coding tasks, and you are very much encouraged to help one another as needed. However, <strong>be sure that each member commits their changes under their own GitHub identity</strong>.</p>
+<h2 id="installing-the-calendar-module">Installing the calendar module</h2>
+<p>Download the <code>.zip</code> file from the <a href="https://github.com/tonymullen/meanjs-calendar">meanjs-calendar GitHub repo</a>. Don&#39;t clone the repo. Unzip the file and rename the directory from <code>meanjs-calendar-master</code> to <code>calendar</code>. Place the directory into the <code>modules</code> directory of your project alongside <code>articles</code>, <code>chat</code>, <code>core</code>, and <code>users</code>.</p>
+<p>In order to ensure that the dependencies get properly installed, we need to add them to <code>bower.json</code> file. Starting at the end the <code>&quot;dependencies&quot;</code> object (line 18-19), add the <code>angular-ui-calendar</code> dependency, then modify the rest of the file as follows. Note the addition of <code>resolutions</code> and the modification of <code>overrides</code> to include jquery as a dependency of angular.:</p>
+<pre><code>  &quot;owasp-password-strength-test&quot;: &quot;~1.3.0&quot;,
+  &quot;angular-ui-calendar&quot;: &quot;^1.0.1&quot;
+  },
+  &quot;resolutions&quot;: {
+   &quot;angular&quot;: &quot;^1.5.8&quot;
+  },
+  &quot;overrides&quot;: {
+   &quot;angular&quot;: {
+     &quot;dependencies&quot;: {
+      &quot;jquery&quot;: &quot;*&quot;
+     }
+   },
+   &quot;bootstrap&quot;: {
+     &quot;main&quot;: [
+       &quot;dist/css/bootstrap.css&quot;,
+       &quot;dist/css/bootstrap-theme.css&quot;,
+       &quot;less/bootstrap.less&quot;
+      ]
+    }
+  }
+}
+</code></pre><!-- .* -->
+<p>Make sure all commas are where they belong (between object elements, but not after the last element of an object).</p>
+<p>This should ensure that the correct version of Angular is installed to handle the various dependencies on it.</p>
+<p>Run</p>
+<pre><code>bower install
+</code></pre><p>to install all client dependencies.</p>
+<p>We&#39;re also going to use <code>wiredep</code> to add the necessary dependencies to our assets file automatically. Modify the default task in your <code>gulpfile.js</code> file to add the <code>wiredep</code> task to the default <code>gulp</code> task, like this (use a string search to find the default task):</p>
+<pre><code>// Run the project in development mode
+gulp.task(&#39;default&#39;, function (done) {
+  runSequence(&#39;env:dev&#39;, [&#39;copyLocalEnvConfig&#39;, &#39;makeUploadsDir&#39;], &#39;wiredep&#39;, &#39;lint&#39;, [&#39;nodemon&#39;, &#39;watch&#39;], done);
+});
+</code></pre><p>Finally, run</p>
+<pre><code>gulp
+</code></pre><p>Check your project&#39;s <code>config/assets/default.js</code> file. The <code>css</code> and <code>js</code> assets arrays should look like this:</p>
+<pre><code>css: [
+  // bower:css
+  &#39;public/lib/bootstrap/dist/css/bootstrap.css&#39;,
+  &#39;public/lib/bootstrap/dist/css/bootstrap-theme.css&#39;,
+  &#39;public/lib/ng-img-crop/compile/minified/ng-img-crop.css&#39;,
+  &#39;public/lib/fullcalendar/dist/fullcalendar.css&#39;,
+  // endbower
+],
+js: [
+  // bower:js
+  &#39;public/lib/jquery/dist/jquery.js&#39;,
+  &#39;public/lib/angular/angular.js&#39;,
+  &#39;public/lib/angular-animate/angular-animate.js&#39;,
+  &#39;public/lib/angular-bootstrap/ui-bootstrap-tpls.js&#39;,
+  &#39;public/lib/angular-messages/angular-messages.js&#39;,
+  &#39;public/lib/angular-mocks/angular-mocks.js&#39;,
+  &#39;public/lib/angular-resource/angular-resource.js&#39;,
+  &#39;public/lib/angular-ui-router/release/angular-ui-router.js&#39;,
+  &#39;public/lib/ng-file-upload/ng-file-upload.js&#39;,
+  &#39;public/lib/ng-img-crop/compile/minified/ng-img-crop.js&#39;,
+  &#39;public/lib/owasp-password-strength-test/owasp-password-strength-test.js&#39;,
+  &#39;public/lib/moment/moment.js&#39;,
+  &#39;public/lib/fullcalendar/dist/fullcalendar.js&#39;,
+  &#39;public/lib/angular-ui-calendar/src/calendar.js&#39;,
+  // endbower
+],
+</code></pre><h2 id="modifying-the-view">Modifying the view</h2>
+<p>A button to add a private event must be displayed in the view when the user is logged in (authenticated), but not when the user is not logged in.</p>
+<p>To display things in the view depending on some model value, Angular has several useful directives: <code>ng-show</code>, <code>ng-hide</code>, and <code>ng-if</code>. Look into these and decide which is the best for what you need to do.</p>
+<p>The model holds information about the state of the user&#39;s authentication also. You can find out how this is handled by digging into the code a bit. In particular, look at things in the interface that you know are displayed or not displayed depending on whether the user is logged in. There are several such things in the header, which you&#39;ll find in the <code>core</code> module&#39;s <code>client/views</code> directory.</p>
+<p>You&#39;ll also have to decide what function to call on <code>ng-click</code>. To do this, you&#39;ll need to coordinate with the person tasked with modifying or writing the appropriate function in the client controller. You may also want to adjust the button for adding public events to specify that they are public and/or the <code>ng-click</code> value for adding public events.</p>
+<h2 id="modifying-the-client-controller">Modifying the client controller</h2>
+<p>The <code>addEvent()</code> function currently creates an event resource (it gets this from <code>CalendarService</code>), adds it to the model and writes it to the database. The event is not marked as public or private, but it is treated as public and can be seen by anyone, whether they are logged in or not.</p>
+<p>One way to adjust this to handle the public and private case would be to have the function take a boolean argument representing whether the event is public or not. You would also need to modify the newly created event object to hold this information. Coordinate with the person working on the model schema to ensure that the data you add to this object will conform to the model schema and be properly persisted.</p>
+<p>In addition to representing whether the event is public or private, you should also make use of the <code>className</code> attribute to add a (HTML) class value that will be associated with the event in the DOM. This will enable different types of events to be styled differently with CSS. Coordinate with the person who will work on the CSS file for this.</p>
+<h2 id="modifying-the-model-schema">Modifying the model schema</h2>
+<p>The model schema for calendar events needs to include an attribute that represents whether the event is public or private. Coordinate with the person working on the client controller for this.</p>
+<h2 id="modifying-the-server-controller">Modifying the server controller</h2>
+<h3 id="retrieving-the-data">Retrieving the data</h3>
+<p>The server controller carries out database tasks using Mongoose (along with the model schema, which Mongoose uses to facilitate database queries). You need to modify how lists of events are retrieved from the database here. Specifically, you need to investigate how to filter results from the <code>.find()</code> method such that events are retrieved if they are either public or if their <code>user</code> value is identical to the <code>_id</code> of the current user. The current user can be retrieved from the HTTP request, which is represented here as <code>req</code>. So <code>req.user</code> is the user object, and <code>req.user._id</code> is the database id of the user. Note that if there is no logged in user, then <code>req.user</code> will be undefined, and trying to get its <code>._id</code> value will result in an error.</p>
+<p>Read the Mongoose documentation on using <code>.find()</code> to make queries with object values, and in particular on the use of the <code>$or</code> operator for creating disjunctive queries.</p>
+<h3 id="creating-the-events">Creating the events</h3>
+<p>You will need to look for where the event is initially saved and ensure that the <code>.save()</code> method is only called if the calendar event is either public or has a defined user object; i.e. only requests with a defined user can create private events. If not, you will need to send a response with status 403. The message value of the response should be &#39;Must be logged in to save a private event&#39;. The http response object is represented as <code>res</code>. Look at other examples in the code to see how the status and message values are sent and how the response is sent.</p>
+<h2 id="modifying-the-css">Modifying the CSS</h2>
+<p>Add CSS rules to alter the <code>background-color</code> and <code>border</code> values for private events. Coordinate with the person working on the client controller to know what the name of the class will be that represents private events, and then write your CSS rules for that class selector.</p>
+
+
+</div>
+
+<hr>
+<div class="classcredits">
+
+
+
+</div>
+
+</div>
+</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+		
+			<p class="pull-left">Tony Mullen tmullen@pugetsound.edu</p>
+			<p class="pull-right">
+				This website was last updated at 2018-05-07T07:28:06.422Z
+			</p>
+		</footer>
+	</div><!-- /container -->
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script><script defer="defer"  src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/ui-bootstrap-tpls-0.12.1.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/display-latex2.user.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/script.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/app.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/controllers.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/directives.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/domtweaks.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/solutions.js"></script>
+</body>
+</html>

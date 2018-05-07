@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Installing Node and related software | Tony Mullen</title>
+	<meta name="description" content="su18wd/hw/install-node-description.html.md" />
+	<meta name="keywords" content="computer, science, university, puget, sound, natural, language, processing, graphics, Blender, programming, software, engineering" />
+	<meta name="author" content="Tony Mullen" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.78.4" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="https://neu-cs5610-su18.github.ioimages/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy-fancy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/bs-style.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/style.css" />
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+					<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+
+					<li>
+						<a href="https://neu-cs5610-su18.github.io">
+							Home
+						</a>
+					</li>
+					
+					<li>
+						<a target="_blank" href="https://northeastern.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2558508_1&cmp_tab_id=_464806_1&mode=view">
+							Blackboard
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/NEU-CS5610-SU18">
+							Github
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://piazza.com/class/jgr02hx6u8614x">
+							Piazza
+						</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="container">
+		<!-- Content -->
+		<section id="content" class="content">
+			<div class="row" class="text-center">
+<div class="col-md-4">
+<h3> Summer 2018 </h3>
+<a href="/~tmullen/">
+<h2>CS 240: Software Engineering</h2>
+</a>
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Instructor</h2>
+</div>
+<div class="panel-body">
+<p>
+Tony Mullen</br>
+410 Thompson Hall<br/>
+</p>
+<p>
+Phone: 253.879.3562<br/>
+Email: tmullen@pugetsound.edu<br/>
+</p>
+</div>
+</div>
+
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Submitting the assignment</h2>
+</div>
+<div class="panel-body">
+
+
+</div>
+</div>
+
+</div>
+<div class="col-md-8">
+
+<div class="row-fluid">
+
+<h3> Installing Node and related software </h3>
+
+<div class="description">
+
+<h2 id="software-installation">Software installation</h2>
+<p>You&#39;ll need a good code editor. I recommend Atom, and I have favorable impressions of Visual Studio Code (<strong>not</strong> Visual Studio). I am most able to offer technical assistance for Atom.</p>
+<p>Likewise, you may use whatever browser or browsers you&#39;re comfortable with (production applications should always be tested with all major browsers), but for your primary development browser I would recommend Chrome or Firefox. </p>
+<h3 id="mean-stack">MEAN Stack</h3>
+<p>Instructions for installing what you need to follow the book are given in appendices A and B of the book. I recommend a few changes to how and in what order you install the software.</p>
+<ol start="0">
+<li><p><strong>(For OS X users) Install XCode</strong> You should be able to get this from the Apple App Store. This contains necessary development tools.</p>
+</li>
+<li><p><strong>Install Git first</strong> This is especially recommended for Windows users. You will need to be using a Unix-style command-line terminal to do most of the work in this class, and Git Bash provides this. (Mac OSX and Linux have this built in). <strong>A DOS-style terminal (cmd) is not adequate</strong>. For this reason, <a href="https://git-scm.com/downloads">download and install Git</a> first, then use Git Bash (you can find it in your Start menu once Git is installed) to do the rest of the installation.</p>
+</li>
+<li><p><strong>Install NVM</strong> Installing Node.js using NVM (Node Version Manager) is recommended for everybody to be able to easily switch between Node.js versions, but it&#39;s also particularly useful for OS X users, who will otherwise have some additional complexity to avoid permission issues. To do this, you need to install <a href="https://github.com/creationix/nvm">NVM</a> (Mac or Linux) or <a href="https://github.com/coreybutler/nvm-windows">NVM-Windows</a> (Windows) first. Carry out the installation instructions on the appropriate software page linked above (for Windows you can carry out the instructions either in the built-in command prompt or in Git Bash, but I recommend Git Bash.)</p>
+</li>
+<li><p><strong>Install Node.js using NVM</strong> From the command line, run</p>
+<pre><code>   nvm install 4.1.0
+</code></pre><p>This should install a version of Node.js that is sure to be compatible with the book code. To ensure you&#39;re using this version of Node.js, call</p>
+<pre><code>   nvm use 4.1.0
+</code></pre><p>Verify that Node.js has been installed by calling (from the command line):</p>
+<pre><code>   node --version
+</code></pre><p>and:</p>
+<pre><code>   npm --version
+</code></pre><p>Which should output something like v4.1.0 and 3.5.2, respectively (these numbers may be a little different, but shouldn&#39;t be too far off).</p>
+</li>
+<li><p><strong>Install the rest of the globally installed software</strong> Follow the instructions from A.2 in Appendix A to install Express and MongoDB. Also, install a good text editor which enables, at minimum, code highlighting and project-wide string search. I recommend <a href="https://atom.io/">Atom</a> which has built-in support for Git and many other nice features. Sublime is also fine if it&#39;s what you&#39;re comfortable with.  </p>
+</li>
+<li><p><strong>The rest you can install after you start on the book project</strong> Read Chapter 3 carefully, and begin following the instructions for the project starting at section 3.2.2 (this is where Assignment 2 begins). As you go, install the remaining software as it becomes necessary. Follow the instructions in Appendix B (except B.2 and B.3, because you&#39;ve already done that) to install Twitter Bootstrap, the Amelia theme for Bootstrap, and the Heroku toolbelt.</p>
+</li>
+</ol>
+<p>Good luck with it! Let me know if you hit any snags!</p>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<p>As they come in, I&#39;ll post some problems (and hopefully solutions!) here:</p>
+<h2 id="windows-issues">Windows issues</h2>
+<p><strong>NVM installs, but Node is not found</strong></p>
+<p>There can be problems when NVM and Node.js are installed in file paths which include blank spaces in directory names. If NVM appears to be properly installed (i.e. calling <span class="codefont">nvm --version</span> gives a version number) and Node.js appears to install correctly but then can&#39;t be found. Also, if you try to run  <span class="codefont">nvm use 4.1.0</span> and it yields an error, this may be the problem.</p>
+<p><strong>solution:</strong> Uninstall NVM using the uninstaller (found in the <span class="codefont">nvm</span>  directory). Re-install NVM using the installer you downloaded, however, when asked for the installation directories for <span class="codefont">nvm</span> and <span class="codefont">nodejs</span> rather than going with the default installation directories, choose <span class="codefont">C:/nvm</span> and <span class="codefont">C:/nodejs</span>, respectively.  </p>
+<h2 id="os-x-issues">OS X issues</h2>
+<p><strong>NVM installs and gives a message about <span class="codefont">.bashrc</span> or  <span class="codefont">.bash_profile</span> or doesn&#39;t remember your NVM installation when you open a new terminal</strong></p>
+<p>NVM may need an environment variable set so that the shell (terminal environment) knows where to look to execute the program. Typically, environment variables for the terminal shell (<span class="codefont">bash</span>) are set in startup files like  <span class="codefont">.bash_profile</span>. If you don&#39;t use your terminal much, it&#39;s possible you don&#39;t have such a file.</p>
+<p><strong>solution:</strong> In a text editor (e.g. Atom), create a new file. Save it in your home directory (typically the directory with your name in OS X) with the name <span class="codefont">.bash_profile</span>. Don&#39;t forget the dot at the beginning of the name, even if OS X complains slightly when you save it (normally, dots at the beginning of file names are reserved for system files. Use it anyway.) In the body of the file, copy and paste this:</p>
+<pre><code>export NVM_DIR=« $HOME/.nvm&quot;
+[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; . &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm
+</code></pre><p>You will need to open a new terminal for the environment variable setting to take effect. After that, NVM should run properly.</p>
+<h3 id="nvm-installs-and-your-span-class-codefont-bash_profile-span-is-set-as-above-node-js-installs-correctly-but-then-gets-forgotten-when-you-open-a-new-terminal">NVM installs, and your <span class="codefont">.bash_profile</span> is set as above, Node.js installs correctly, but then gets forgotten when you open a new terminal</h3>
+<p>Call</p>
+<pre><code>nvm alias default &lt;version_number&gt;
+</code></pre><p>With the version number you want to use. This is like <span class="codefont">nvm use </span> but should persist across various shell (terminal) sessions.</p>
+
+
+</div>
+
+<hr>
+<div class="classcredits">
+
+
+
+</div>
+
+</div>
+</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+		
+			<p class="pull-left">Tony Mullen tmullen@pugetsound.edu</p>
+			<p class="pull-right">
+				This website was last updated at 2018-05-07T07:28:06.422Z
+			</p>
+		</footer>
+	</div><!-- /container -->
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script><script defer="defer"  src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/ui-bootstrap-tpls-0.12.1.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/display-latex2.user.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/script.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/app.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/controllers.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/directives.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/domtweaks.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/solutions.js"></script>
+</body>
+</html>

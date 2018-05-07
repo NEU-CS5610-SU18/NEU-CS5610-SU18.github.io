@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>Homework 3: Building a Web Application with Node and Express | Tony Mullen</title>
+	<meta name="description" content="su18wd/hw/hw3-NodeExpress-description.html.md" />
+	<meta name="keywords" content="computer, science, university, puget, sound, natural, language, processing, graphics, Blender, programming, software, engineering" />
+	<meta name="author" content="Tony Mullen" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.78.4" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="https://neu-cs5610-su18.github.ioimages/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy-fancy.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/bs-style.css" /><link  rel="stylesheet" href="https://neu-cs5610-su18.github.io/styles/style.css" />
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+					<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+
+					<li>
+						<a href="https://neu-cs5610-su18.github.io">
+							Home
+						</a>
+					</li>
+					
+					<li>
+						<a target="_blank" href="https://northeastern.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2558508_1&cmp_tab_id=_464806_1&mode=view">
+							Blackboard
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/NEU-CS5610-SU18">
+							Github
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://piazza.com/class/jgr02hx6u8614x">
+							Piazza
+						</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="container">
+		<!-- Content -->
+		<section id="content" class="content">
+			<div class="row" class="text-center">
+<div class="col-md-4">
+<h3> Summer 2018 </h3>
+<a href="/~tmullen/">
+<h2>CS 240: Software Engineering</h2>
+</a>
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Instructor</h2>
+</div>
+<div class="panel-body">
+<p>
+Tony Mullen</br>
+410 Thompson Hall<br/>
+</p>
+<p>
+Phone: 253.879.3562<br/>
+Email: tmullen@pugetsound.edu<br/>
+</p>
+</div>
+</div>
+
+<div class="panel panel-success" style="margin-top: 21px;">
+<div class="panel-heading">
+<h2 class="panel-title">Submitting the assignment</h2>
+</div>
+<div class="panel-body">
+<p>This assignment should <em>also</em> be committed to your personal Github repository and tagged to indicate which chapter work it represents. See the description of the assignment for chapter 3 for details on creating a new remote repo, committing and pushing to it, and tagging. Don&#39;t forget to push the tags.  </p>
+<p>Update the Readme.md describing what you did for this assignment
+and detailing any issues you had. Mention in the Readme.md file what the typo was in the book and what you had to do to fix the file in question so the application worked.</p>
+<p>Add the new material for this chapter to the <strong>top</strong> of the Readme.md file, so it&#39;s the first thing I see, but do not delete your comments from the previous assignment. Make sure the link to the live Heroku application stays on top also.</p>
+<p>To submit this assignment go to the <a href="https://moodle.pugetsound.edu/moodle/mod/assign/view.php?id=407262">Moodle page for the assignment</a> and upload the screenshot and enter the link to your GitHub Repository&#39;s top page (where the README is displayed). Review the notes on my <a href="https://github.com/UPS-CSCI240-S17/TonyMullen">GitHub page</a> to be sure you&#39;re submitting everything that needs to be submitted.  Make sure that the link is a proper link (i.e. clickable). Also, make sure that your GitHub README.md file contains a (clickable) link to the live application on Heroku.</p>
+
+
+</div>
+</div>
+
+</div>
+<div class="col-md-8">
+
+<div class="row-fluid">
+
+<h3> Homework 3: Building a Web Application with Node and Express </h3>
+
+<div class="description">
+
+<h2 id="overview">Overview</h2>
+<p>This assignment simply continues where the last one left off. You will use the same Github repository and Heroku application as for Homework 2, simply committing and pushing the new changes to both remotes.</p>
+<p>Following the instructions in Chapter 4 of <em>Getting MEAN</em>, you&#39;ll begin to build a static website using Node.js and Express.js. Node.js is a platform for running JavaScript outside of a browser (i.e. on a server). Express.js is a server-side framework written in JavaScript (and executed on Node.js) that handles the work of a web server in a flexible and extensible way.</p>
+<p>For this assignment, you will implement the application through the end of Chapter 4.</p>
+<h2 id="chapter-notes">Chapter notes</h2>
+<p>Read the <a href="https://github.com/NEU-CS5610-SU18/TonyMullen-Book#chapter-4">chapter notes</a> in my project repository for details on what is required for this chapter and important tips for working through the chapter.  </p>
+<h4 id="jade-and-html">Jade and HTML</h4>
+<p>This assignment also involves using the <a href="https://naltatis.github.io/jade-syntax-docs/">Jade templating framework</a> for writing web page templates. Jade lets you write web page content in a simpler, easier-to-read way than HTML, and enables you to create general layouts that can be populated by data using variables, all of which is later converted to HTML &quot;behind the scenes&quot; for the browser. Jade is not part of the standard Mean.js boilerplate, so probably won&#39;t be using it in your group project, but it&#39;s a great tool to get familiar with.</p>
+<p>Although it&#39;s very convenient, knowing Jade is <em>not</em> a substitute for knowing HTML. You should keep this in mind and be aware that there is always a <a href="https://naltatis.github.io/jade-syntax-docs/">one-to-one correspondence between Jade code and the HTML</a> it converts to.</p>
+<p>By the way, Jade is not the only alternate markup language that can be used to generate HTML. An even simpler (albeit less powerful) one is <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, which is <a href="https://help.github.com/categories/writing-on-github/">supported by Github</a>. This is why the Readme file uses the .md suffix. (You could use .txt or .html, but you would lose the benefits of Markdown.)</p>
+<h2 id="github-commits">GitHub Commits</h2>
+<p>As in all chapters, you should be committing regularly. You should make at least four meaningful GitHub commits for each chapter of the book.</p>
+<h2 id="grade-weighting-lateness">Grade weighting &amp; lateness</h2>
+<p>This assignment has a weight of 1 within the individual assignments portion of your overall grade.</p>
+
+
+</div>
+
+<hr>
+<div class="classcredits">
+
+
+
+
+</div>
+
+</div>
+</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+		
+			<p class="pull-left">Tony Mullen tmullen@pugetsound.edu</p>
+			<p class="pull-right">
+				This website was last updated at 2018-05-07T07:28:06.422Z
+			</p>
+		</footer>
+	</div><!-- /container -->
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script><script defer="defer"  src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/ui-bootstrap-tpls-0.12.1.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/jquery.bootstrap-touchspin.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/angular-flippy/flippy.min.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/vendor/display-latex2.user.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/script.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/app.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/controllers.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/directives.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/domtweaks.js"></script><script defer="defer"  src="https://neu-cs5610-su18.github.io/scripts/solutions.js"></script>
+</body>
+</html>
