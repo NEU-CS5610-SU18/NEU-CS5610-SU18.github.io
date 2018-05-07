@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+		 More info: h5bp.com/i/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Our site title and description -->
+	<title>CS 5610: Web Development | Tony Mullen</title>
+	<meta name="description" content="su18wd/description.html.md" />
+	<meta name="keywords" content="computer, science, university, puget, sound, natural, language, processing, graphics, Blender, programming, software, engineering" />
+	<meta name="author" content="Tony Mullen" />
+
+	<!-- Output DocPad produced meta elements -->
+	<meta name="generator" content="DocPad v6.78.4" />
+
+	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	<meta name="viewport" content="width=device-width" />
+
+	<!-- Icons -->
+		<link rel="shortcut icon" href="http://mathcs.pugetsound.edu/~tmullenimages/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png">
+
+	<!-- Shims: IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link  rel="stylesheet" href="http://mathcs.pugetsound.edu/~tmullen/vendor/bootstrap-3.3.4-dist/css/bootstrap.min.css" /><link  rel="stylesheet" href="http://mathcs.pugetsound.edu/~tmullen/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="http://mathcs.pugetsound.edu/~tmullen/vendor/jquery.bootstrap-touchspin.css" /><link  rel="stylesheet" href="http://mathcs.pugetsound.edu/~tmullen/vendor/angular-flippy/flippy.css" /><link  rel="stylesheet" href="http://mathcs.pugetsound.edu/~tmullen/vendor/angular-flippy/flippy-fancy.css" /><link  rel="stylesheet" href="http://mathcs.pugetsound.edu/~tmullen/styles/bs-style.css" /><link  rel="stylesheet" href="http://mathcs.pugetsound.edu/~tmullen/styles/style.css" />
+</head>
+<body>
+	<!-- Menu -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+			</div>
+					<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+
+					<li>
+						<a href="http://mathcs.pugetsound.edu/~tmullen">
+							Home
+						</a>
+					</li>
+					
+					<li>
+						<a target="_blank" href="https://northeastern.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2558508_1&cmp_tab_id=_464806_1&mode=view">
+							Blackboard
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/NEU-CS5610-SU18">
+							Github
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://piazza.com/class/jgr02hx6u8614x">
+							Piazza
+						</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="container">
+		<!-- Content -->
+		<section id="content" class="content">
+			<div class="row" class="text-center">
+  <div class="col-md-4">
+  <h3> Summer 2018 </h3>
+  <h2>
+  CS 5610: Web Development
+</h2>
+
+
+<div class="panel panel-success" style="margin-top: 21px;">
+	<div class="panel-heading">
+		<h2 class="panel-title">Instructor</h2>
+	</div>
+	<div class="panel-body">
+	<p>
+  	Tony Mullen</br>
+	</p>
+	<p>
+  Email: tmullen@css.neu.edu<br/>
+  </p>
+</div>
+</div>
+
+
+<div class="panel panel-success" style="margin-top: 21px;">
+	<div class="panel-heading">
+		<h2 class="panel-title">Support</h2>
+	</div>
+	<div class="panel-body">
+	<p>
+	<p>You can email me any time. I try to respond to emails within 24 hours. You should not expect a response to emails received after 5:00 PM until the next day.</p>
+<p>I will also be available for online conferencing</p>
+
+		</p>
+	</div>
+</div>
+
+<div class="panel panel-success" style="margin-top: 21px;">
+	<div class="panel-heading">
+		<h2 class="panel-title">Attendance and lateness policy</h2>
+	</div>
+	<div class="panel-body">
+	<p>This course is online. Video lectures and other materials will be available at students&#39; convenience.</p>
+<p>Live lectures and live conference sessions will be scheduled so as to make attendance as convenient as possible for those who wish to attend.</p>
+
+
+	</div>
+</div>
+
+<div class="panel panel-success" style="margin-top: 21px;">
+	<div class="panel-heading">
+		<h2 class="panel-title">Academic integrity</h2>
+	</div>
+	<div class="panel-body">
+	<p>
+	Please ensure that any work you take credit for is your own. Homework should be
+	assumed to be individual work unless it is explicitly given as group work.</p>
+	</p>
+<p>
+  If your work involves working with or contributing to code written by other people
+  (as is often the case when working with open source software) always be aware of
+  and respectful of the license governing the use of the code, and always be clear
+  about where your own contributions begin and end.
+</p>
+  <p>
+  Soliciting online for solutions to homework is a breach of academic integrity.
+  Support websites such as Stack Overflow are
+  valuable resources for getting help with legitimate programming problems. You
+  <em>may</em> turn to such resources for
+  general support for software libraries or tools and for technical troubleshooting.
+  If you are not sure whether your question is appropriate
+  for a public forum, check with me first. Once you post content on Stack Overflow,
+  you will probably not be able to remove it, so don't post anything you may come
+  to regret.
+  </p>
+</div>
+</div>
+
+<div class="panel panel-success" style="margin-top: 21px;">
+	<div class="panel-heading">
+		<h2 class="panel-title">Title IX</h2>
+	</div>
+	<div class="panel-body">
+	<p>
+  Title IX makes it clear that violence and harassment based on
+  sex and gender are Civil Rights offenses subject to the same
+  kinds of accountability and the same kinds of support applied
+  to offenses against other protected categories such as r
+  ace, national origin, etc. If you or someone you know has
+  been harassed or assaulted, you can find the appropriate
+  resources here:
+    [http://www.northeastern.edu/oidi/titleix/](http://www.northeastern.edu/oidi/titleix/)
+	</p>
+</div>
+</div>
+
+</div>
+
+<div class="col-md-8">
+
+<div class="row-fluid">
+
+<div class="description">
+
+<h3 id="course-description">Course description</h3>
+<p>This course discusses Web development sites that are dynamic, data driven, and interactive. Focuses on the software development issues of integrating multiple languages, assorted data technologies, and Web interaction. Considers Angular, Node.js, MongoDB, HTTP, HTML, CSS, JavaScript, AJAX, and RESTful Web services. The student is introduced to Web development through live coding sessions and will work individually through a book tutorial that illustrates applying industry standards and best practices while implementing a web application project.</p>
+<p>As students gain confidence through the application of their skills, they will move on to implement a final project of their choosing and deploy it in a publicly available server. Students may work in teams of up to 3 members. Each student or team must also create extensive documentation of their goals, plans, design decisions, accomplishments, and user guidelines. All source files will be shared in GitHub repositories.</p>
+
+
+</div>
+
+<div class="goals">
+
+<h3 id="goals-of-the-class">Goals of the class</h3>
+<p>By the end of this class students will</p>
+<ul>
+<li>Develop software collaboratively using state-of-the-art tools and methodologies.</li>
+<li>Carry out software development within an established, professional-quality codebase.</li>
+<li>Understand the strengths and weaknesses of various software development processes.</li>
+<li>Understand the importance of design and the significance of software design patterns.</li>
+<li>Acquire practical skills for developing web applications.</li>
+</ul>
+
+
+</div>
+
+<div class="textbook">
+
+<h3 id="lecture-slides">Lecture slides</h3>
+<p>Lecture slides for this class will be posted soon after the lecture is completed. You can find them <a href="http://www.something.com">here</a>.</p>
+<h3 id="textbook-required-materials">Textbook &amp; required materials</h3>
+<p>The following books is required for this course:</p>
+<p><a href="https://www.manning.com/books/getting-mean-with-mongo-express-angular-and-node-second-edition">Getting MEAN with Mongo, Express, Angular, and Node 2nd Edition</a>
+by Simon Holmes</p>
+<p>Note that this is the 2nd edition, and only available at this time through the &quot;Manning Early Access Program&quot; in electronic form. The first edition of the book is out of date and does <em>not</em> cover the necessary material for this class.</p>
+
+
+</div>
+
+<div class="calendar">
+
+<h3 id="calendar">Calendar</h3>
+<div class="tables-begin"></div>
+
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Date</th>
+<th>Topic</th>
+<th>Reading</th>
+<th>Assignment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>5/7</td>
+<td>Introduction, Overview, Version Control</td>
+<td>Getting MEAN<br>Ch 1, 2</td>
+<td><a href="http://mathcs.pugetsound.edu/~tmullen/hw/s18se/hw1-JavaScript" title="HW 1: JavaScript">HW 1: JavaScript tutorial</a> <br> <strong>Due Wed 1/24</strong> <br> <a href="http://mathcs.pugetsound.edu/~tmullen/hw/s18se/install-node" title="Node installation guide">Install Git, NVM (or NVM-windows), Node.js (via NVM), etc. and Atom</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>5/14</td>
+<td>The Web</td>
+<td>GM Ch 3</td>
+<td><a href="http://mathcs.pugetsound.edu/~tmullen/hw/s18se/hw2-MeanSetup" title="HW 2: Setting up a MEAN project">HW 2: Setting up a MEAN project (Ch 1-3)</a> <br> <strong>Due Mon 1/29</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>5/21</td>
+<td>Web Application architecture &amp; REST</td>
+<td>GM Ch 4</td>
+<td><a href="http://mathcs.pugetsound.edu/~tmullen/hw/s18se/hw3-NodeExpress" title="HW 3: Working with Node.js and Express">HW 3: Working with Node.js and Express (Ch 4)</a> <br> <strong>Due Mon 2/5</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>5/28</td>
+<td>Server side: Node.js</td>
+<td></td>
+<td><a href="http://mathcs.pugetsound.edu/~tmullen/hw/s18se/hw4-MongoDBMongoose" title="HW 4: MongoDB and Mongoose">HW 4: Personal web page with Bootstrap</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>6/4</td>
+<td>Client side: HTML &amp; CSS</td>
+<td>GM Ch 5</td>
+<td><a href="http://mathcs.pugetsound.edu/~tmullen/hw/s18se/hw5-RESTfulAPI" title="HW 5: Building a RESTful api">HW 5: MongoDB and Mongoose (Ch 5)</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>6/11</td>
+<td>JS in depth</td>
+<td>GM Ch 6</td>
+<td><a href="http://mathcs.pugetsound.edu/~tmullen/hw/s18se/hw6-UseCase" title="HW 6: Use Case">HW 6: Building RESTful web api (Ch 6)</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>6/18</td>
+<td>More JS</td>
+<td>GM Ch 7</td>
+<td><a href="http://mathcs.pugetsound.edu/~tmullen/hw/s18se/hw7-AngularSPA" title="HW 7: Building an SPA with Angular.js">HW 7: Creating an Angular application with TypeScript (Ch 7)</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>6/25</td>
+<td>JQuery &amp; other libraries</td>
+<td>GM Ch 8</td>
+<td><a href="http://mathcs.pugetsound.edu/~tmullen/hw/s18se/hw8-Ethics" title="HW 8: Ethics paper">HW 8: Building a single page application with Angular (Ch 8)</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>7/2</td>
+<td>Design patterns; MVC; Angular.js</td>
+<td>GM Ch 9</td>
+<td>[HW 9: Building an SPA with Angular.js (Ch 9)][hw9]</td>
+</tr>
+<tr>
+<td>10</td>
+<td>7/9</td>
+<td>More Angular</td>
+<td>GM Ch 10</td>
+<td>[HW 10: Building an SPA with Angular.js (Ch 10)][hw10]</td>
+</tr>
+<tr>
+<td>11</td>
+<td>7/16</td>
+<td>Frameworks &amp; tools</td>
+<td>GM Ch 11 (reading only)</td>
+<td><a href="http://mathcs.pugetsound.edu/~tmullen/hw/s18se/group-project" title="Group project">Group project</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td>7/23</td>
+<td>Troubleshooting</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>7/30</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>8/6</td>
+<td>Classes end 8/9</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>8/13</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="tables-end"></div>
+
+
+
+
+</div>
+
+<div class="grading">
+
+<h3 id="grading">Grading</h3>
+<p>This course will be graded based on the following factors:</p>
+<ul>
+<li>45% Group project</li>
+<li>40% Individual homework</li>
+<li>10% Quizzes</li>
+<li>5% Attendance &amp; participation</li>
+</ul>
+<p>There are no midterms or final exams for this course. Quizzes will be announced at least one class period in advance.</p>
+<p>Weighting values for individual homework assignments and group iterations can be found on the corresponding assignment or iteration&#39;s description page.</p>
+<h3 id="group-project">Group project</h3>
+<p>The centerpiece of this class is a group project, in which students will work together in groups to plan and implement a functioning software product.</p>
+<p>Students will self-select their teams (with support of the professor). Teams will consist of 3 to 5 students (optimally 4).</p>
+<p>All students will be expected to contribute approximately equally to the group project. A single value ranging from 0.0 to 1.0 will represent an individual&#39;s overall contribution to their group&#39;s project. The value defaults to 1.0 and will stay at that value if there are no issues with the individual&#39;s contribution. <strong>An individual&#39;s final grade for the group project (worth 45% of their course grade) will be multiplied by this value.</strong> Student contributions will be evaluated according to team evaluations, informal observation, the commit record on the project&#39;s GitHub repository, and any other relevant factors. <strong>Contributing meaningfully to the development of the group project (not just the final presentation) is the single most important factor in your grade in this class.</strong></p>
+<p>Students are responsible for the equitable distribution of work within the group. Group members should make an attempt to identify potential problems early and communicate to the professor if changes need to be made. If other members aren&#39;t pulling their weight, don&#39;t suffer in silence, for their good as well as your own!</p>
+<h3 id="homework-assignments">Homework assignments</h3>
+<p>In addition to (and in preparation for) the group project, there are a number of individual homework assignments. These run parallel to group project iterations, but taper off as work on the group project becomes more intense.</p>
+<p>Homework assignments as a whole will count for approximately 40% of the total grade. Your performance on homework will also be a factor that I will look at if there are doubts about your contributions on the final project.</p>
+<p>Much of the homework involves following the tutorial-style presentation of the <em>Getting MEAN</em> book. This requires reading the text, entering the code, and producing a working version of the project described by the book.</p>
+<p>Book chapter assignments are credited for being submitted <em>by the deadline</em>. Completion of the full book is weighted more heavily than individual chapters, so &quot;late work&quot; on book chapters is credited <em>implicitly</em> through credit on later chapters. This means that missed deadlines <strong>can not be made up</strong>. Be aware that these assignments are cumulative, and so catching up is increasingly difficult as you fall behind.</p>
+<h3 id="participation">Participation</h3>
+<p>Attendance and participation in class count for 5% of the total grade, overall.
+However, attendance and participation issues may also be reflected in the contribution score for your final group project.</p>
+<h3 id="quizzes">Quizzes</h3>
+<p>There will be occasional short quizzes covering recent reading and/or lecture material. These will be announced at least one class period in advance.</p>
+
+
+</div>
+
+<div class="resources">
+
+<h3 id="primary-online-resources">Primary online resources</h3>
+<p>The class will make use of several online resources (please let me know if any of the links provided are not correct):</p>
+<p>The class <a href="https://northeastern.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=_2558508_1&amp;cmp_tab_id=_464806_1&amp;mode=view">Blackboard page</a> will be where you can turn in assignments and find some class materials.</p>
+<p><a href="https://github.com/NEU-CS5610-SU18">Github</a> for version/revision control.</p>
+<p><a href="https://piazza.com/class/jgr02hx6u8614x">Piazza</a> for collaboration.</p>
+
+
+</div>
+
+<hr>
+<div class="classcredits">
+
+```
+cacheable: false
+```
+
+
+</div>
+
+</div>
+</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+		
+			<p class="pull-left">Tony Mullen tmullen@pugetsound.edu</p>
+			<p class="pull-right">
+				This website was last updated at 2018-05-07T05:25:12.972Z
+			</p>
+		</footer>
+	</div><!-- /container -->
+
+	<!-- Scripts -->
+	<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script><script defer="defer"  src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><script defer="defer"  src="http://mathcs.pugetsound.edu/~tmullen/vendor/ui-bootstrap-tpls-0.12.1.min.js"></script><script defer="defer"  src="http://mathcs.pugetsound.edu/~tmullen/vendor/jquery.bootstrap-touchspin.min.js"></script><script defer="defer"  src="http://mathcs.pugetsound.edu/~tmullen/vendor/angular-flippy/flippy.min.js"></script><script defer="defer"  src="http://mathcs.pugetsound.edu/~tmullen/vendor/display-latex2.user.js"></script><script defer="defer"  src="http://mathcs.pugetsound.edu/~tmullen/scripts/script.js"></script><script defer="defer"  src="http://mathcs.pugetsound.edu/~tmullen/scripts/app.js"></script><script defer="defer"  src="http://mathcs.pugetsound.edu/~tmullen/scripts/controllers.js"></script><script defer="defer"  src="http://mathcs.pugetsound.edu/~tmullen/scripts/directives.js"></script><script defer="defer"  src="http://mathcs.pugetsound.edu/~tmullen/scripts/domtweaks.js"></script><script defer="defer"  src="http://mathcs.pugetsound.edu/~tmullen/scripts/solutions.js"></script>
+</body>
+</html>
